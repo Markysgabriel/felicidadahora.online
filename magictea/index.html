@@ -271,7 +271,29 @@ text-align: center;
 </style>
 <div class="description-1658581519684A04PEd-element ">
 <h3>
-<span class="xl"></span>&nbsp;people watching now...<br>
+<footer class="py-5 text-center">
+	
+<div class="elementor-widget-container">
+			<center>🟢<span id="numeroinicial">182</span> people watching now...
+
+<script>
+  numeroinicial = 165;
+  valorminimo = 180;
+  valormaximo = 750;
+  mude_a_cada_ms = 1000;
+
+  function add() {
+    variavel = Math.floor((Math.random() * 20) - 10);
+    if ((numeroinicial + variavel) < valorminimo) {variavel = variavel * (-1);}
+    if ((numeroinicial + variavel) > valormaximo) {variavel = variavel * (-1);}
+    numeroinicial += variavel;
+    document.getElementById("numeroinicial").innerHTML = numeroinicial;
+    setTimeout("add()", mude_a_cada_ms);
+  }
+  add();
+</script></center>
+
+<footer class="py-5 text-center">
 </h3>
 </div>
 </div>
