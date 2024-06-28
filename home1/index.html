@@ -60,6 +60,27 @@
 <link rel="dns-prefetch" href="https://images.converteai.net">
 <link rel="dns-prefetch" href="https://api.vturb.com.br">
 <!-- VTURB -->
+<script>
+document.addEventListener('DOMContentLoaded', (event) => {
+    const alertMessageElement = document.createElement('div');
+    const today = new Date();
+    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+    const formattedDate = today.toLocaleDateString('en-US', options);
+    
+    alertMessageElement.innerText = `This presentation will be taken down today ${formattedDate}.`;
+    
+    alertMessageElement.style.backgroundColor = '#FF000E';
+    alertMessageElement.style.color = '#FFFFFF';
+    alertMessageElement.style.padding = '12px';
+    alertMessageElement.style.border = '1px solid #FF000E';
+    alertMessageElement.style.borderRadius = '1px';
+    alertMessageElement.style.fontSize = '18px';
+    alertMessageElement.style.textAlign = 'center';
+    alertMessageElement.style.margin = 'px 0';
+    
+    document.body.prepend(alertMessageElement);
+});
+</script>
   </head>
 
   <body>
