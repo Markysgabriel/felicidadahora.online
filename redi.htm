@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="refresh" content="https://felicidadahora.online/shein1premios" id="redirectURL" />
+        <title>Redirecionando...</title>
+    </head>
+    <body>
+        <p></p>
+        <script>
+            function getParameterByName(name, url) {
+                if (!url) url = window.location.href;
+                name = name.replace(/[\[\]]/g, "\\$&");
+                var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+                    results = regex.exec(url);
+                if (!results) return null;
+                if (!results[2]) return "";
+                return decodeURIComponent(results[2].replace(/\+/g, " "));
+            }
+
+            var utm_source = getParameterByName("utm_source");
+            var utm_campaign = getParameterByName("utm_campaign");
+            var utm_medium = getParameterByName("utm_medium");
+            var utm_content = getParameterByName("utm_content");
+
+            var redirectURL = "https://felicidadahora.online/shein1premios";
+            redirectURL += "?utm_source=" + utm_source;
+            redirectURL += "&utm_campaign=" + utm_campaign;
+            redirectURL += "&utm_medium=" + utm_medium;
+            redirectURL += "&utm_content=" + utm_content;
+
+            window.location.replace(redirectURL);
+        </script>
+    </body>
+</html>
